@@ -1,1 +1,20 @@
 // Mixins in here
+
+.button(@border-radius,@background-color,@padding,@margin,@text-align:center,@text-color){
+    border-radius: @border-radius;
+    background-color:@background-color;
+    padding: @padding;
+    margin: @margin;
+    text-align: @text-align;
+    color: @text-color;
+}
+
+
+div .btn {
+    .button(12px,#086B4B,10px,0 50px,center,white);
+    @media @mobile {
+        margin: 0;
+        background-color: rgb(20, 140, 184);
+        
+      }        
+}
